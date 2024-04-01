@@ -1,0 +1,46 @@
+{%extends 'index.html'%}
+{% block title %}Registeration Page{% endblock %}
+{% block content %}
+
+<div class="loginpage">
+    <div class="logincontainer">
+       <div class="h2_login"> <h2>REGISTRATION</h2> </div>
+       <div class="form_data">
+        <form action="" method="post">{% csrf_token %}
+            <div class="container text-left">
+                <div class="row mt-3">
+                  <div class="col-md-4">Name:</div>
+                  <div class="col-md-8"> <input name="name" type="name" placeholder="Enter the name" required></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">Email:</div>
+                    <div class="col-md-8"> <input name="email" type="email" placeholder="Enter the Email" required></div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-md-4">Language:</div>
+                    <div class="col-md-8"> <input name="lang" type="text" placeholder="Enter the Language" required></div>
+                  </div>
+                <div class="row mt-3">
+                  <div class="col-md-4">Password:</div>
+                  <div class="col-md-8"> <input name="password" type="password" placeholder="Enter the password" required></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-4">Confirm Password:</div>
+                    <div class="col-md-8"> <input name="cpassword" type="password" placeholder="Re-Enter the password" required></div>
+                  </div>
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-9"><button type="submit" name="login">Sign up</button></div>
+                    <div class="col-3"> <a href="static/index.css">back to Login</a></div>
+                </div>
+            </div>
+       </div>
+      
+           
+           
+            
+        </form>
+        </div>
+       
+</div> 
+
+{% endblock %}

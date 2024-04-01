@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/home.css">
+    </head>
+    <body>
+        <header><div class="h_text">NLT FOR RAILWAYS</div> </header>
+        <ul>
+          <li><a class="active" href="/home2">SearchByTrainNo.</a></li>
+          <li><a href="#news">SearchByStation</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Feedback</a></li>
+        </ul>
+
+         <div class="form-data">
+      <form action="" method="post">{% csrf_token %}
+      
+  
+            Train No.:
+          <input type="number" name="tno" required> 
+          <button type="submit" name="tno_submit">Search</button>
+         
+     
+        
+       </form>
+      
+    </div>
+    <div class="data">
+        <p>{{translatedtxt_tno}}</p> 
+    </div>
+ 
+     
+
+    </body>
+</html>
