@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar with Sign-up and Sign-in page</title>
 
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="static/railtalk.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,13 +16,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="body">
         <header class="header">
-            <img src="TRAIN MANIA YOU TUBE CHANNEL LOGO.png" width="35" height="35">
+            <img src="static/logo.png" width="35" height="35">
             <a href="#" class="brand">RAILLINGO</a>
             <nav class="navbar">
               <a href="#" class="item">Home</a>
@@ -72,43 +70,33 @@
             </a>
             
         </header>
-
-
+       
+<body>
+  <div class="chat-container" id="chat-container">
+    <div class="heading">
+        <h1>Rail <span>Talk</span></h1>
+    </div>
+    <div class="chat-box" id="chat-box"></div>
     <div class="container">
-      <div class="content">
-        <div class="left-side">
-          <div class="address details">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="topic">Address</div>
-            <div class="text-one">Surkhet, NP12</div>
-            <div class="text-two">Birendranagar 06</div>
-          </div>
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Phone</div>
-            <div class="text-one">+0098 9893 5647</div>
-            <div class="text-two">+0096 3434 5678</div>
-          </div>
-          <div class="email details">
-            <i class="fas fa-envelope"></i>
-            <div class="topic">Email</div>
-            <div class="text-one">raillingo@gmail.com</div>
-            <div class="text-two">info.raillingo@gmail.com</div>
+      <div class="row">
+        <div class="col-9">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Type Here....">
+            <label for="floatingInput">Type Here....</label>
           </div>
         </div>
-        <div class="right-side">
-          <div class="topic-text">About Us</div>
-          <p>RailLingo revolutionizes railway station communication, ensuring smooth interactions worldwide. Empowering travelers and staff, it breaks language
-             barriers with ease, fostering seamless experiences. Join us in creating inclusive railway environments where communication knows no bounds.</p>
-        <ul>
-          <li> <p>Multilingual Communication: Translate conversations instantly to over 50 languages. </p> </li>
-          <li> <p>Text-to-Speech Functionality: Transform written text into spoken words for accessibility. </p> </li>
-          <li> <p>Interactive Chatbots: Access instant assistance and information in multiple languages. </p> </li>
-          <li> <p>User-Friendly Interface: Intuitive design for effortless navigation. </p> </li>
-        </ul>
+        <div class="col-3">
             
-      </div>
-      </div>
-    </div>
-  </body>
-  </html>
+    <button onclick="sendMessage()">          <div class="iconbutton">
+      <img class="sendicon" src="static/send.svg" width="50" height="53">
+    </div></button>
+         
+        </div>
+    
+     
+    
+    
+  </div>
+  <script src="static/railtalk.js"></script>
+</body>
+</html>

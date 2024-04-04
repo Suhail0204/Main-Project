@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Sign-up and Sign-in page</title>
+
+    <link rel="stylesheet" href="static/3Dmodels.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body">
+        <header class="header">
+            <img src="static/logo.png" width="35" height="35">
+            <a href="#" class="brand">RAILLINGO</a>
+            <nav class="navbar">
+              <a href="#" class="item">Home</a>
+              <div class="dropdown">
+                <a href="#" class="item dropdown-toggle">Announcements</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Announcement 1</a>
+                  <a href="#" class="dropdown-item">Announcement 2</a>
+                  <a href="#" class="dropdown-item">Announcement 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" class="item dropdown-toggle">Services</a>
+                <div class="dropdown-menu">
+                  <a href="booking" class="dropdown-item">Booking</a>
+                  <a href="3Dmodel" class="dropdown-item">3D Models</a>
+                  <a href="railtalk" class="dropdown-item">Rail Talk</a>
+                </div>
+              </div>
+              <a href="feedback" class="item">Feedback</a>
+              <a href="contact" class="item">Contact</a>
+            </nav>
+      
+            <a href="#" class="btnLogin">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <path
+                  d="M18 3C9.7155 3 3 9.7155 3 18C3 26.2845 9.7155 33 18 33C26.2845 33 33 26.2845 33 18C33 9.7155 26.2845 3 18 3Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.40649 27.519C6.40649 27.519 9.74999 23.25 18 23.25C26.25 23.25 29.595 27.519 29.595 27.519M18 18C19.1935 18 20.3381 17.5259 21.182 16.682C22.0259 15.8381 22.5 14.6935 22.5 13.5C22.5 12.3065 22.0259 11.1619 21.182 10.318C20.3381 9.47411 19.1935 9 18 9C16.8065 9 15.6619 9.47411 14.818 10.318C13.9741 11.1619 13.5 12.3065 13.5 13.5C13.5 14.6935 13.9741 15.8381 14.818 16.682C15.6619 17.5259 16.8065 18 18 18Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            
+        </header>
+       <div class="content">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="static/model1.jpg" class="d-block w-55" alt="..." width="1100" height="600">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="model1"><button type="button" class="btn btn-primary">View Model</button></a>
+                  <p>Click on the above button to view the model</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+   
+       </div>
+
+       
+
+
+    
+  
+
+</div>
+
+   
+  </body>
+  </html>

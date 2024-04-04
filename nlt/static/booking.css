@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+    background: url("blur_bg.jpg") no-repeat; 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header {
+    overflow: visible;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 80px;
+    z-index: 20;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .1);
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.brand:hover {
+    color: #fff;
+}
+
+.navbar .item {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.navbar .item:hover {
+    color: #fff;
+}
+
+.navbar .item::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    border-radius: 1px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navbar .item:hover::after {
+    transform: scaleX(1);
+}
+
+.button-img a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Existing CSS */
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown .dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Adjust the position as needed */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease; /* Add transition effect */
+  }
+  
+  .dropdown:hover .dropdown-toggle::after {
+    width: 100%;
+  }
+  
+  .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 150px;
+    padding: 10px;
+    background-color: #ab5d0ec8; /* Background color for dropdown menu */
+    border-radius: 5px;
+    border-top: 2px solid rgba(255, 255, 255, .1); /* Add border to top */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #fff;
+    color: #000; /* Change text color on hover */
+  }
+  
+  /* Existing CSS continues */
+  
+ #cards-content{
+  position: relative;
+  left: 150px;
+  top: 200px;
+  bottom: 0%;
+ }
+
+ .checked{
+  color: orange;
+ }
+
