@@ -15,5 +15,6 @@ urlpatterns = [
    path('model1',views.model1),
    path('railtalk',views.railtalk),
    path('announcement1',views.announcement1),
+   path('announcement2',views.announcement2),
 
 ]
