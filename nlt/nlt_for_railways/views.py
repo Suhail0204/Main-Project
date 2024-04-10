@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from transformerAPI import *
 from gettraininfo import *
 from eleventts import *
+from eleventtssource import *
 from getroute import *
 
 # Create your views here.
@@ -93,8 +94,8 @@ def announcement1(request):
         # print(f"The language code for {language_name} is {language_code}")
         temp = query({"inputs": t_anno, "parameters" : { "src_lang":"en_XX","tgt_lang":language_code}})
         tno_trans =  temp[0].get('translation_text')
-        # tts(tno_trans)
-        # print(tno_trans)
+        tts(tno_trans)
+       # ttssource(t_anno)
     return render(request,'announcement1.html',{"translatedtxt_tno" : tno_trans , "src_anno" : t_anno})
 
 

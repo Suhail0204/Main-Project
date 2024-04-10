@@ -25,13 +25,12 @@
       <img src="static/logo.png" width="35" height="35">
       <a href="#" class="brand">RAILLINGO</a>
       <nav class="navbar">
-        <a href="#" class="item">Home</a>
+        <a href="home" class="item">Home</a>
         <div class="dropdown">
           <a href="#" class="item dropdown-toggle">Announcements</a>
           <div class="dropdown-menu">
-            <a href="announcement1" class="dropdown-item">Announcement 1</a>
-            <a href="announcement2" class="dropdown-item">Announcement 2</a>
-            <a href="#" class="dropdown-item">Announcement 3</a>
+            <a href="announcement1" class="dropdown-item">Train Info</a>
+            <a href="announcement2" class="dropdown-item">Route Info</a>
           </div>
         </div>
         <div class="dropdown">
@@ -108,10 +107,7 @@
           <label for="floatingTextarea2Disabled">Announcement</label>
         </div>
   
-        <audio controls>
-          <source src="audio_file.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <audio controls id="audiosl"></audio>
       
          
           
@@ -129,7 +125,7 @@
               <label for="floatingTextarea2Disabled">Announcement</label>
             </div>
   
-            <audio controls id="audio"></audio>
+            <audio controls id="audiorl"></audio>
 
             
 
@@ -137,7 +133,8 @@
             <script>
               // Function to update audio source
               function updateAudioSource() {
-                  document.getElementById("audio").src = 'static/output.mp3';
+                document.getElementById("audiorl").src = 'static/output.mp3';
+                document.getElementById("audiosl").src = 'static/output1.mp3';
               }
           
               // Add event listener to textarea for input event

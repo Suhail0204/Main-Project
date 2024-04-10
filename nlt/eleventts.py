@@ -3,18 +3,18 @@ import requests
 
 
 def tts(text):
-    url = "https://api.elevenlabs.io/v1/text-to-speech/Mu5jxyqZOLIGltFpfalg"
+    url = "https://api.elevenlabs.io/v1/text-to-speech/UEKYgullGqaF0keqT8Bu"
     payload = {
-    "model_id": "eleven_monolingual_v1",
     "text": text,
+    "model_id": "eleven_monolingual_v1",
     # "voice_settings": {
     #     "stability": 2,
-    #     "similarity_boost": 2
+    #     "similarity_boost": 1
     # }
 }
 
     headers = {
-    "xi-api-key": "456649b4c264770115d8872521f0fb83",
+    "xi-api-key": "432c0e622071f0c0fea0b6d4f80ff636",
     "Content-Type": "application/json"
 }
 
@@ -34,3 +34,4 @@ def tts(text):
     else:
         print(f"Error: {response.status_code} - {response.text}")
 
+tts("This is working fine")

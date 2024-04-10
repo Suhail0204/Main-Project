@@ -29,9 +29,8 @@
         <div class="dropdown">
           <a href="#" class="item dropdown-toggle">Announcements</a>
           <div class="dropdown-menu">
-            <a href="announcement1" class="dropdown-item">Announcement 1</a>
-            <a href="#" class="dropdown-item">Announcement 2</a>
-            <a href="#" class="dropdown-item">Announcement 3</a>
+            <a href="announcement1" class="dropdown-item">Train Info</a>
+            <a href="announcement2" class="dropdown-item">Route Info</a>
           </div>
         </div>
         <div class="dropdown">
@@ -108,13 +107,8 @@
           <label for="floatingTextarea2Disabled">Announcement</label>
         </div>
   
-        <audio controls>
-          <source src="audio_file.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      
+        <audio controls id="audiosl"></audio>
          
-          
       </div>
   
       <div class="trg-container">
@@ -129,25 +123,22 @@
               <label for="floatingTextarea2Disabled">Announcement</label>
             </div>
   
-            <audio controls id="audio"></audio>
+            <audio controls id="audiorl"></audio>
 
             
 
             
             <script>
-              // Function to update audio source
-              function updateAudioSource() {
-                  document.getElementById("audio").src = 'static/output.mp3';
-              }
-          
-              // Add event listener to textarea for input event
-              document.getElementById("floatingTextarea2Disabled").addEventListener('input', function() {
-                  // Fetch audio source when textarea receives input
-                  updateAudioSource();
-              });
-          
-              // Fetch audio source initially when page loads
-              updateAudioSource();
+            function updateAudioSource() {
+    document.getElementById("audiorl").src = 'static/output.mp3';
+    document.getElementById("audiosl").src = 'static/output1.mp3';
+}
+
+// Add event listener to textarea for change event
+document.getElementById("floatingTextarea2Disabled").addEventListener('change', function() {
+    // Fetch audio source when textarea content changes
+    updateAudioSource();
+});
           </script>
             
             
